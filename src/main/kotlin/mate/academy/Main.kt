@@ -1,7 +1,7 @@
 package mate.academy
 
 import mate.academy.model.Figure
-import mate.academy.model.FigureSupplier
+import mate.academy.service.FigureSupplier
 
 fun main() {
     val figures = getFigures()

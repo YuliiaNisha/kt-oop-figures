@@ -6,7 +6,7 @@ import java.math.RoundingMode
 class Square(color: Color, private val side: Double) : Figure(color) {
     override fun draw() {
         println("Figure: square, area: ${getArea()} sq. units, side: " +
-                "$side units, color: ${color.name.lowercase()})"
+                "$side units, color: ${color.name.lowercase()}"
         )
     }
 

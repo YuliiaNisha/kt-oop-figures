@@ -1,10 +1,11 @@
-package mate.academy.model
+package mate.academy.service
 
-import mate.academy.service.ColorSupplier
+import mate.academy.model.*
 
 class FigureSupplier {
+    private val supplier = ColorSupplier()
+
     fun getRandomFigure(): Figure {
-        val supplier = ColorSupplier()
         return when ((1..5).random()) {
             1 -> Square(supplier.getRandomColor(), getRandomDouble())
             2 -> Rectangle(supplier.getRandomColor(), getRandomDouble(), getRandomDouble())
